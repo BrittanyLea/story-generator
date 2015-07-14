@@ -23,19 +23,15 @@ h1 {
 	margin-left: auto;
     margin-right: auto;
 	width: 800px;
-	background-color: gray;
-	font-family: 'Optimus Princeps';
-	src: local('../Fonts/OptimusPrinceps.ttf');
+	background-color: rgba(128,128,128, 0.6);
 	border: 5px solid black;
-	padding: 5px 5px;
-    color: AntiqueWhite;
+	padding: 20px 5px;
+    color: black;
 }
 
 h3 {
 	margin-left: auto;
     margin-right: auto;
-	font-family: 'Optimus Princeps';
-	src: local('../Fonts/OptimusPrinceps.ttf');
 	padding: 5px 5px;
     color: AntiqueWhite;
 }
@@ -43,4 +39,31 @@ h3 {
 h4 {
 	margin-left: auto;
     margin-right: auto;
+}
+
+@font-face {
+    font-family: 'Optimus Princeps';
+    src:
+    local('Optimus Princeps'),
+    url('Optimus Princeps.ttf');
+}
+
+.HeaderController {
+	margin-left: auto;
+    margin-right: auto;
+	width: 800px;
+	border: 5px solid black;
+	background-color: rgba(128,128,128, 0.6);
+	padding: 1px 1px;
+}
+
+.HeaderController ul {
+	height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+
+.HeaderController li {
+	display: inline; 
+    padding: 20px; 
 }

@@ -19,5 +19,20 @@ angular.module('app', [])
 	};
 });
 
+//Controller for nav bar
+
+function HeaderController($scope, $location) 
+{ 
+    $scope.isActive = function (viewLocation) { 
+        return viewLocation === $location.path();
+    };
+}
 
 
+/*
+TODO:
+- Add views/controllers for multiple books (fix nav)
+- Fix the silly music player
+- Add login for users
+- Sustain data on refresh by using $cookieStore or localStorage
+ */
