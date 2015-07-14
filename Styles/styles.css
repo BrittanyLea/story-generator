@@ -1,0 +1,46 @@
+body {
+	background-image: url('../Images/green.jpg');
+	background-color: white;
+	color: black;
+	font-family: serif; 
+}
+
+.story {
+	margin-left: auto;
+    margin-right: auto; 
+	height: 400px;
+	width: 800px;
+	overflow-y: scroll;
+	background-image: url('../Images/oldpaper.jpg');
+	background-color: white;
+    border: 5px solid black;
+	padding: 5px 5px;
+	font-family: serif;
+	color: black;
+}
+
+h1 {
+	margin-left: auto;
+    margin-right: auto;
+	width: 800px;
+	background-color: gray;
+	font-family: 'Optimus Princeps';
+	src: local('../Fonts/OptimusPrinceps.ttf');
+	border: 5px solid black;
+	padding: 5px 5px;
+    color: AntiqueWhite;
+}
+
+h3 {
+	margin-left: auto;
+    margin-right: auto;
+	font-family: 'Optimus Princeps';
+	src: local('../Fonts/OptimusPrinceps.ttf');
+	padding: 5px 5px;
+    color: AntiqueWhite;
+}
+
+h4 {
+	margin-left: auto;
+    margin-right: auto;
+}

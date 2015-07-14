@@ -1,0 +1,30 @@
+<DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Story Generator</title>
+	<link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body ng-controller="MainController">
+	<section class="music">
+	<embed src="zelda-music.mp3" width="300" height="30" autostart="false" loop="FALSE"></embed>
+</section>
+
+	<h1>Story Generator</h1>
+
+	<section class="story">
+		<input type="text" class="sentence-input" placeholder="new sentence" ng-model="newSentence" size="100">
+		<button ng-click="addSentence(newSentence)">add</button>
+		<p ng-if="!sentences.length">Please add to the story</p>
+		<ul style="list-style-type:none">
+			<li ng-repeat="sentence in sentences" ng-click="done($index)">
+				<p>{{ sentence.sent }}</p>
+			</li>
+		</ul>
+	</section>
+
+	
+	<script src="angular.js"></script>
+	<script src="./Client/app.js"></script>
+</body>
+</html>
